@@ -21,16 +21,13 @@ int main() {
 
     printf("\n");
 
-    // Простой способ - равномерное расширение с обеих сторон
     for (int i = 0; i < h; i++) {
         int current_width = verh + (niz - verh) * i / h;
         int spaces = (niz - current_width) / 2;
 
-        // Печать пробелов
         for (int j = 0; j < spaces; j++)
             printf(" ");
 
-        // Печать символов
         for (int j = 0; j < current_width; j++)
             printf("%c", simvol);
 
@@ -38,4 +35,5 @@ int main() {
     }
 
     return 0;
+
 }
